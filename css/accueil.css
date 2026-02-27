@@ -34,5 +34,5 @@ ul li a.active {
 img { /* https://www.w3schools.com/css/css3_image_center.asp*/
   display: block;
   margin: auto;
-  width: 1%;
+  width: 50%;
 }
