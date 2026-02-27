@@ -31,7 +31,7 @@ ul li a.active {
   background-color: #000000;
 }
 
-img { /* https://www.w3schools.com/css/css3_image_center.asp */
+.rp img { /* https://www.w3schools.com/css/css3_image_center.asp */
   display: block;
   margin: auto;
   width: 25%;
