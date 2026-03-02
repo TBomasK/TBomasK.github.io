@@ -1,0 +1,30 @@
+body{
+  padding: 25px;
+  background-color: #002147;
+}
+
+h1 {
+  text-align: center;
+  font-family: Monospace;
+  font-style: italic;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.h3 {
+  color: white;
+}
+
+.para {
+  text-align: right;
+  color: white;
+}
+
+#piano {  /* Source : https://www.w3schools.com/css/css3_image_center.asp */
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  margin: auto;
+  display: block;
+}
