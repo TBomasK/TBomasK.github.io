@@ -1,0 +1,17 @@
+#moi {
+  text-align: right;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.rp img {
+  display: block;
+  margin: auto;
+  width: 70px;
+  border-radius: 25%;
+}
