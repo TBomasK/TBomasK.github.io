@@ -3,6 +3,6 @@ h1, .poème {
   color: white;
 }
 
-.poème {
+body {
   background-image: url("/images/montagne.jpg");
 }
