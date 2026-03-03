@@ -21,6 +21,10 @@ h1 {
   color: white;
 }
 
+#home {
+  width: 50px;
+}
+
 #piano {  /* Source : https://www.w3schools.com/css/css3_image_center.asp */
   height: 120px;
   width: 120px;
