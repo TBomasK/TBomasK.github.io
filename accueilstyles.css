@@ -8,9 +8,9 @@ h1 { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_bac
   color: white;
   font-size: 50px;
   position: absolute;
-  top: 50%
-  left: 50%
-  transform: translate(-50%. -50%)
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%. -50%);
 }
 
 body { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero */
