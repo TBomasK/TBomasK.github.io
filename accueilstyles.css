@@ -9,15 +9,8 @@ h1 {
   font-size: 50px;
 }
 
-.rp img {
-  display: block;
-  margin: auto;
-  height: 25%;
-  border-radius: 25%;
-}
-
 body {
   background-image: url("/images/meAfterHolmes.jpg");
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: cover;
 }
