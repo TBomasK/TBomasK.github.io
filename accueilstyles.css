@@ -15,3 +15,9 @@ h1 {
   height: 25%;
   border-radius: 25%;
 }
+
+body {
+  background-image: url("/images/meAfterHolmes.jpg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
