@@ -1,5 +1,5 @@
 #moi {
-  text-align: center;
+  text-align: right;
   color: white;
 }
 
@@ -7,7 +7,6 @@ h1 { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_bac
   text-align: center;
   color: white;
   font-size: 50px;
-  position: absolute;
 }
 
 body { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero */
