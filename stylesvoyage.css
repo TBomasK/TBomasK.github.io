@@ -1,3 +1,13 @@
-#tab {
-  align-contents: center;
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+th {
+  color: white;
+}
+
+td {
+  color: white;
 }
