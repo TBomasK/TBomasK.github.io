@@ -3,14 +3,20 @@
   color: white;
 }
 
-h1 {
+h1 { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero */
   text-align: center;
   color: white;
   font-size: 50px;
+  position: absolute;
+  top: 50%
+  left: 50%
+  transform: translate(-50%. -50%)
 }
 
-body {
+body { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero */
   background-image: url("/images/meAfterHolmes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
+  position: relative;
 }
