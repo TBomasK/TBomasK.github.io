@@ -14,3 +14,8 @@ img { /* Source: https://www.w3schools.com/css/css3_image_center.asp */
   display: block;
   margin: auto;
 }
+
+.p {
+  color: white;
+  text-align: center;
+}
