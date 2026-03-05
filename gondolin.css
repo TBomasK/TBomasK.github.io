@@ -6,3 +6,7 @@
 tr td {
   color: white;
 }
+
+thead th {
+  color: white
+}
