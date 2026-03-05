@@ -15,4 +15,6 @@ body { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_b
   background-size: cover;
   height: 500px;
   position: relative;
+  padding: 30px;
+  margin: 30px;
 }
