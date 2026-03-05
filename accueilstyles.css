@@ -10,9 +10,9 @@ h1 { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_bac
 }
 
 body { /* Source : https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background_hero */
-  background-image: url("/images/meAfterHolmes.jpg");
+  background-image: url("/images/tomBom.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
   height: 500px;
-  position: relative;
 }
