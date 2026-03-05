@@ -10,3 +10,7 @@ tr td {
 thead th {
   color: white
 }
+
+.retour {
+  width: 20px;
+}
