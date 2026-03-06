@@ -4,11 +4,11 @@ h1, .poème {
   font-size: 50px;
 }
 
-body { <!-- https://www.google.com/imgres?q=dark%20mountain&imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1554176259-aa961fc32671%3Ffm%3Djpg%26q%3D60%26w%3D3000%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.1.0%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fHww&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fdark-mountain&docid=wQnnL6bwvNE9BM&tbnid=fiveQNOD6V6btM&vet=12ahUKEwiw8K2m3ouTAxV-N2IAHQpuE2EQnPAOegQIHxAB..i&w=3000&h=2128&hcb=2&ved=2ahUKEwiw8K2m3ouTAxV-N2IAHQpuE2EQnPAOegQIHxAB -->
+body { 
   background-image: url("/images/montagne.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} <!-- https://www.google.com/imgres?q=dark%20mountain&imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1554176259-aa961fc32671%3Ffm%3Djpg%26q%3D60%26w%3D3000%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.1.0%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fHww&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fdark-mountain&docid=wQnnL6bwvNE9BM&tbnid=fiveQNOD6V6btM&vet=12ahUKEwiw8K2m3ouTAxV-N2IAHQpuE2EQnPAOegQIHxAB..i&w=3000&h=2128&hcb=2&ved=2ahUKEwiw8K2m3ouTAxV-N2IAHQpuE2EQnPAOegQIHxAB -->
 
 h3 {
   text-align: center;
