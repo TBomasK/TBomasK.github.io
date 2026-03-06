@@ -1,0 +1,20 @@
+p, h1, h2, h3, td, tr {
+  color: white;
+}
+
+table.table { /* source: https://www.w3schools.com/howto/howto_css_table_center.asp */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr td {
+  color: white;
+}
+
+thead th {
+  color: white
+}
+
+.retour {
+  width: 20px;
+}
