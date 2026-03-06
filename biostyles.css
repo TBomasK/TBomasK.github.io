@@ -1,5 +1,6 @@
 p, h1, h2, h3, td, tr {
   color: white;
+  text-align: center;
 }
 
 table.table { /* source: https://www.w3schools.com/howto/howto_css_table_center.asp */
@@ -17,4 +18,9 @@ thead th {
 
 .retour {
   width: 20px;
+}
+
+#comp,  {
+  text-align: center;
+  color: white;
 }
