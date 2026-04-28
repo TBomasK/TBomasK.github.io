@@ -1,0 +1,38 @@
+h1 {
+    font-size : 45px;
+    text-align: center;
+    color : lightgray;
+    text-decoration : underline;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.question {
+    font-size : 25px;
+    color : lightgray;
+    text-decoration : bold;
+}
+
+.affiche {
+    font-size : 18px;
+    color : lightgray;
+    text-decoration : bold;
+}
+
+.reponse {
+  opacity: 0.6;
+}
+
+.reponse:hover {
+    display: block;
+    opacity: 1;
+    transform: scale(1.05);
+    transform: translateY(1px);
+}
+}
