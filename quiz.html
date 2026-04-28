@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Quiz intéractif</title>
+        <link rel="stylesheet" href="quizStyle.css">
+    </head>
+    
+    <body>
+        
+        <form>
+            
+            <h1>Quiz super le fun !</h1>
+            
+            <!-- textbox pour le nom de l'élève -->
+            <label class="question" for="txtNom">Insérez votre nom : </label>
+            <div class="reponse">
+            <input type="text" id="txtNom">
+            </div>
+            <br><br>
+            
+            <!-- question 1 Java VS Js (radiobutton) -->
+            <label class="question" for="radQuestionUn">Quelle est le lien entre le Java et le JavaScript ?</label><br>
+            <div class=reponse>
+            <input type="radio" name="javaJS" value="false">Ils sont deux noms pour le même language<br>
+            </div>
+            <div class=reponse>
+            <input type="radio" name="javaJS" value="true">Ils n'ont aucun rapport<br>
+            </div>
+            <div class=reponse>
+            <input type="radio" name="javaJS" value="false">Ils sont comme des cousins ; ils s'aiment un peu
+            </div>
+            <br><br>
+            
+            <!-- question 2 Balises HTML (checkbox) -->
+            <label class="question" for="chkQuestionDeux">Lesquels sont des balises valides en HTML ?</label><br>
+            <div class = "reponse">
+            <input type="checkbox" name="balises" value="true">br<br>
+            </div>
+            <div class=reponse>
+            <input type="checkbox" name="balises" value="false">css<br>
+            </div>
+            <div class=reponse>
+            <input type="checkbox" name="balises" value="true">body<br>
+            </div>
+            <div class=reponse>
+            <input type="checkbox" name="balises" value="false">headder<br>
+            </div>
+            
+            <br>
+            
+            <!-- question 3 CSS embellir (select) -->
+            <label class="question" for="selQuestionTrois">Quel langage permet d'embellir tes pages HTML ?</label><br>
+            <div class = "reponse">
+            <select id="selQuestionTrois">
+                <option value="false">Sélectionnez une option</option>
+                <option value="false">HTML</option>
+                <option value="false">Ruby</option>
+                <option value="true">CSS</option>
+                <option value="false">JavaScript</option>
+            </select>
+            </div>
+            
+            <br><br>
+            
+            <!-- question 4 HTML définition (select) -->
+            <label class="question" for="selQuestionQuatre">Que signifie l'acronyme HTML ?</label><br>
+            <div class = "reponse">
+            <select id="selQuestionQuatre">
+                <option value="false">Sélectionnez une option</option>
+                <option value="false">HiTech Meaningful Language</option>
+                <option value="false">HyperText Markup Link</option>
+                <option value="true">HyperText Markup Language</option>
+            </select>
+            </div>
+            
+            <br><br>
+            
+            <!-- question 5 <script> (textbox) -->
+            <label class="question" for="txtQuestionCinq">Quelle balise permet d'insérer du JavaScript dans le HTML ? </label><br>
+            <div class = "reponse">
+            <input type="text" id="txtQuestionCinq">
+            </div>
+            <br><br>
+            
+            <!-- bouton pour soumettre le formulaire -->
+            <input class="reponse" type="button" id="btnSoumet" onclick="soumettreQuiz()" value="Soumettre le quiz">
+            
+            <!-- création d'une section pour l,affichage des résultats -->
+            <div class = "affiche" id="divAffiche"></div>
+            
+            <!-- JavaScript -->
+            <script>
+                
+                // fonction
+                function soumettreQuiz() {
+                    // chercher les données dans le formulaire
+                    var bonneReponse = 0
+                    var nom = document.getElementById("txtNom").value;
+                    var affiche = document.getElementById("divAffiche");
+                    
+                    // question 1 (radio)
+                    var radioJavaVsJs = document.getElementsByName("javaJS");
+                    if (radioJavaVsJs[1].checked) {
+                        bonneReponse ++;
+                    }
+                    
+                    // question 2 (chekbox)
+                    var checkHTML = document.getElementsByName("balises");
+                    for (var i=0; i<checkHTML.length; i++) {
+                        if (checkHTML[i].checked && checkHTML[i].value=="true") {
+                            bonneReponse ++;
+                        } else if (checkHTML[i].checked && checkHTML[i].value=="false") {
+                            bonneReponse --;
+                        }
+                    }
+                    
+                    // question 3 (select)
+                    var selectCSS = document.getElementById("selQuestionTrois").value;
+                    if (selectCSS == "true") {
+                        bonneReponse ++;
+                    }
+                    
+                    // question 4 (select)
+                    var selectHTML = document.getElementById("selQuestionQuatre").value;
+                    if (selectHTML == "true") {
+                        bonneReponse ++;
+                    }
+                    
+                    // question 5 (textbox)
+                    var txtScript = document.getElementById("txtQuestionCinq").value;
+                    if (txtScript.toLowerCase() == "<script>" || txtScript.toLowerCase() == "script") {
+                        bonneReponse ++;
+                    }
+                    
+                    if (bonneReponse < 0) {
+                        bonneReponse = 0;
+                    }
+                    
+                    // calcule le pourcentage
+                    var pourcentage = (bonneReponse / 0.06).toFixed(2)
+                    
+                    // construire le massage à afficher
+                    var message = "<br>" + nom + ", tu as eu " + bonneReponse + " bonne(s) réponse(s) sur 6! <br> Ton score : " + pourcentage + "%"
+                    
+                    // affiche le message
+                    affiche.innerHTML = message;
+
+                }
+                
+            </script>
+        </form>
+    </body>
+</html>
